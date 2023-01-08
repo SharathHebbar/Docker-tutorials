@@ -7,6 +7,7 @@ Docker is used to
 - Run applications using Docker Compose
 
 <hr>
+
 ## What is a container?
 
 Simply put, a container is a sandboxed process on your machine that is isolated from all other processes on the host machine. That isolation leverages kernel namespaces and cgroups, features that have been in Linux for a long time. Docker has worked to make these capabilities approachable and easy to use. To summarize, a container:
@@ -16,6 +17,7 @@ Simply put, a container is a sandboxed process on your machine that is isolated 
    - is portable (can be run on any OS).
    - is isolated from other containers and runs its own software, binaries, and configurations.
 <hr>
+
 ## What is a container image?
 
 When running a container, it uses an isolated filesystem. This custom filesystem is provided by a container image. Since the image contains the container’s filesystem, it must contain everything needed to run an application - all dependencies, configurations, scripts, binaries, etc. The image also contains other configuration for the container, such as environment variables, a default command to run, and other metadata.
