@@ -46,7 +46,6 @@ kubectl run pingpong --image alpine ping 1.1.1.1
 Creating Pods vs. Deployments in 1.18+
 Starting in version 1.18 (released March 2020), the kubectl run command only does one thing: create single pods. There were many reasons for this, but the big ones were to reduce the complexity of how the run command worked and to move other resource creation to the kubectl create command. The idea is that kubectl run is now similar to docker run. It creates a single pod, where docker run creates a single container.
 
-Now that everyone's finally using newer versions like 1.24+ I'm replacing these videos. You can follow along on my course updates GitHub project: https://bret.show/courseupdates
 
 Depending on which version of Kubernetes you have installed, you'll need to decide how you'll create objects. Here's a cheat sheet for how old commands should be used with the 1.18+ changes.
 
